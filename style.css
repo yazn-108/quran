@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;}
+body{
+    background: linear-gradient(162.42deg, #0BBFAA -25.87%, #000606 60.25%, #000000 60.25%) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    direction: rtl;
+    overflow: hidden;}
+::-webkit-scrollbar {width: 0px;}
+.played{
+    color: white;
+    text-align: right;}
+.played h3{
+    padding: 20px 5% ;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;}
+.played .items{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap:8px ;
+    overflow: scroll;
+    width: 100%;
+    padding: 0 16px;}
+.played .items .box{
+    width: 114px;
+    height: 154px;
+    overflow: hidden;
+    text-align: center;}
+.played .items .box img{
+    width: 114px;
+    height: 114px;
+    border-radius: 15px;}
+.played .items .box .surah-name{
+font-size: 12px;
+font-weight: bold;
+line-height: 18px;}
+.played .items .box .reader-name{
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.5);}
+    .quran{
+color: white;
+padding: 0px 20px ;
+font-size: 18px;
+margin-top: 25px;}
+body > .content{
+    color: white;
+    width: calc(100% - 32px);
+    height: 53vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    border-radius: 15px 15px 0px 0px;
+    padding-bottom: 5vh;}
+.content .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;}
+.content .row:last-child{margin-bottom: 1vh;}
+.content .row .box{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 5px;
+font-size: 14px;
+line-height: 21px;
+width: fit-content;}
+.content .row .box img{
+height: 150px;
+width: 150px;}
+.quran{
+    color: white;
+    padding: 0px 20px ;
+    font-size: 18px;
+    margin-top: 25px;}
+    body > .content{
+        color: white;
+        width: calc(100% - 32px);
+        height: 53vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        border-radius: 15px 15px 0px 0px;
+        padding-bottom: 5vh;}
+    .content .row{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;}
+    .content .row:last-child{margin-bottom: 1vh;}
+    .content .row .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    line-height: 21px;
+    width: fit-content;}
+    .content .row .box img{
+    height: 150px;
+    width: 150px;}    
+.footer-bar{
+    background-color: white;
+    width: 100%;
+    height: 57px;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(162.42deg, #0BBFAA -20.87%, #000606 100.25%) ;
+    border-radius: 15px 15px 0px 0px;}
+.footer-bar .content{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;}
+.footer-bar .content .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.footer-bar .content .icon img{
+    height: 24px;
+    width: 24px;}
+.footer-bar .content .icon span{
+    font-size: 12px;
+    line-height: 15px;}
+.footer-bar .content .icon:first-child span{color: #525252;}

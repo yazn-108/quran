@@ -1,0 +1,52 @@
+@media (min-width: 600px) {
+    img,span,body > *{display: none;}
+    body{
+        background: linear-gradient(162.42deg, #0BBFAA -20.87%, #000606 100.25%) no-repeat;
+        height: 100vh;
+        background-size: cover;}
+        .warning{display: flex; 
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        color: aliceblue;
+        font-size: xx-large;}
+        .warning::after{content: "عذرا, التصميم معد للهواتف فقط";}}
+        input{display: none;}
+    .logo{
+    background: linear-gradient(162.42deg, #0BBFAA -25.87%, #000606 60.25%, #000000 60.25%) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;}
+input:checked + .logo{display: flex;}
+input:checked ~ .guidance{display: block;}
+.guidance{
+    animation: guidance 10s  0s infinite ease-in-out;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 30%;
+    transform: translate(50%,-50%);
+    text-align: center;
+    font-weight: 100;
+    border-radius: 15px;
+    padding: 10px;
+    color: transparent;
+    background-color: transparent;
+    font-size: x-large;}
+    @keyframes guidance {
+    15%,20%{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.425);}
+    28%,100%{
+    color: transparent;
+    background-color: transparent;}
+    100%{z-index: -1;}}
