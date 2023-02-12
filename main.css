@@ -10,7 +10,9 @@
         width: 100%;
         height: 100vh;
         color: aliceblue;
+        font-family: 'Tajawal', sans-serif;
         font-size: xx-large;}
+
         .warning::after{content: "عذرا, التصميم معد للهواتف فقط";}}
         input{display: none;}
     .logo{
@@ -22,18 +24,17 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0;
-    z-index: 1;}
+    top: 0;}
 input:checked + .logo{display: flex;}
 input:checked ~ .guidance{display: block;}
 .guidance{
-    animation: guidance 10s  0s infinite ease-in-out;
+    animation: guidance 10s  0s 1 ease-in-out;
     z-index: 1;
     display: none;
     position: absolute;
     top: 50%;
     right: 50%;
-    width: 30%;
+    width: 176px;
     transform: translate(50%,-50%);
     text-align: center;
     font-weight: 100;
@@ -41,6 +42,7 @@ input:checked ~ .guidance{display: block;}
     padding: 10px;
     color: transparent;
     background-color: transparent;
+    font-family: 'Tajawal', sans-serif;
     font-size: x-large;}
     @keyframes guidance {
     15%,20%{
@@ -49,4 +51,4 @@ input:checked ~ .guidance{display: block;}
     28%,100%{
     color: transparent;
     background-color: transparent;}
-    100%{z-index: -1;}}
+    45%,100%{z-index: -1;}}
